@@ -25,4 +25,4 @@ I will try to add this scripts ....
 - making github repo
 - making branch
 - merge two branch
-- push
+- push to server
