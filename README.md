@@ -1,6 +1,6 @@
-# pushScript-shell
+# gitScript-shell
 
-this is github push Script made With shell it help to push tour change
+this is repo made With shell it help to push your change to your current github repo
 
 # About
 

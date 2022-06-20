@@ -6,7 +6,7 @@ echo "welcome to the push script this script will push the latest version of the
 echo "this script was made by rebaz omar and is licensed under the MIT license"
 # red color
 echo -e "\e[1;31m"
-echo "https://github.com/rebazomar121/pushScript-shell"
+echo "https://github.com/rebazomar121/gitScript-shell"
         echo -e "\e[1;32m"
         Status=$(git status -s)
     if [ -z "$Status" ]; then
