@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#Specify all the domains you want to check
+
+# read domain data
+read -p "Enter the domain name: " DOMAINS
+
+if ! [ -z "$DOMAINS" ]; then
+  echo "Domain name is $DOMAINS"
+else
+  echo "Domain name is not available"
+  exit 1
+fi
+
+# check is domain name is valid ssl
+for domain in $DOMAINS; do
+  echo "Checking domain $domain"
+  if ! [ -z "$domain" ]; then
+    if ! [ -z "$(echo $domain | grep -E '^[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$')" ]; then
+      echo "Domain $domain is valid ssl"
+    else
+      echo "Domain $domain is not valid"
+      exit 1
+    fi
+  else
+    echo "Domain name is not available"
+    exit 1
+  fi
+done
+
+# check domain is expire or not
